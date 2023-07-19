@@ -1,9 +1,9 @@
 <p style="color: green"><%= notice %></p>
 <div >
   <div class="login-nav">
-      <div><%= link_to "Back", users_path, class: "rails-link" %> </div>
-      <div>Category</div>  
-      <div class="rails-link"><%= button_to "Log-out", destroy_user_session_path, method: :delete %></div>          
+      <div><%= link_to "BACK", users_path, class: "rails-link" %> </div>
+      <div>CATEGORY</div>  
+      <div><%= button_to "LOG-OUT", destroy_user_session_path, method: :delete, class: "rails-btn" %></div>          
   </div>
 
   <% if @categories.empty? %>
@@ -29,11 +29,16 @@
     </div>
       <% end %>
   <% end %>
+
+  <div class = "footer_container">
+ <div class ="footer">
+ <p class="forgot-pwd"><%= link_to "ADD NEW CATEGORY", new_category_path(@user) %></p>
+ </div>
+ </div>
+
   
 </div>
 
 
-<div>
-<p class="forgot-pwd"><%= link_to "Add New category", new_category_path(@user) %></p>
-</div>
+
 
