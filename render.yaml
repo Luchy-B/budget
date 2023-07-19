@@ -1,11 +1,11 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: micronaut
+    databaseName: micronaut_cblb
+    user: micronaut_cblb_user
 
 services:
   - type: web
-    name: mysite
+    name: dazzling
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
