@@ -6,7 +6,7 @@
   </div>
 
 <div>
-  <div class="category">
+  <div class="category transaction-cate">
     <h3><%= @category.name %></h3>
     <p><strong><%= @operations.sum(:amount) %>$ </strong></p>
   </div>
@@ -24,7 +24,7 @@
    <% end %>
  </div>
 
-    <div>
+    <div class="transaction-time">
       <p><%= operation.name %></p>
       <p class="fs"><%= operation.created_at.strftime("%d %b %Y") %></p>
     </div>

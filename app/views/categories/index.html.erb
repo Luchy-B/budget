@@ -7,7 +7,7 @@
   </div>
 
   <% if @categories.empty? %>
-    <h2>There are no categories available</h2>
+    <h2 class="category-msg">There are no categories available</h2>
   <% end %>
   <% @categories.each do |category| %>
     <%= link_to category_operations_path(category_id: category.id) do %>
@@ -19,7 +19,7 @@
         <% end %>
       </div>
 
-      <div>
+      <div class="transaction-time">
         <p><%= category.name %></p>
         <p class="fs"><%= category.created_at.strftime("%d %b %Y") %></p>
       </div>

@@ -1,10 +1,10 @@
 <div class="login-page">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="login-nav">
-      <div><%= link_to "Back", users_path, class: "rails-link" %> </div>
+      <div><%= link_to "BACK", users_path, class: "rails-link" %> </div>
       <div>LOGIN</div>     
       <div class=" actions" >
-        <%= f.submit "Log in", class: "btn-login rails-link" %>
+        <%= f.submit "Log in", class: "btn-login rails-link login-page-btn" %>
       </div>
     </div>
 
@@ -26,7 +26,7 @@
     </div>
   <% end %>
   </div>
-  
+  <br>
 <% end %>
 </div>
 <div class="forgot-pwd">
