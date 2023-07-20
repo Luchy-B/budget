@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'CustomFont';
-  src: url('custom_font.woff2') format('woff2'),
-       url('custom_font.woff') format('woff');
+  src:
+    url('custom_font.woff2') format('woff2'),
+    url('custom_font.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -40,6 +41,7 @@ main {
 .dazzling {
   font-family: 'Lucida Sans', Verdana, sans-serif;
 }
+
 .welcome h1 {
   padding-top: 20%;
 }
@@ -56,10 +58,6 @@ main {
   align-self: center;
   justify-self: center;
   margin-top: 15rem;
-}
-
-.welcome-content h1 {
-
 }
 
 .welcome-content1 {
@@ -94,6 +92,7 @@ main {
 
 .logins a {
   width: 100%;
+
   /* font-weight: 600; */
 }
 
@@ -185,6 +184,7 @@ hr {
 .transaction-cate {
   padding: 25px;
 }
+
 .category-content {
   display: flex;
   flex-direction: row;
@@ -201,6 +201,7 @@ hr {
   flex-direction: column;
   gap: 10px;
 }
+
 .transaction-header {
   display: flex;
   flex-direction: row;
@@ -271,7 +272,6 @@ hr {
   position: fixed;
   cursor: pointer;
   padding: 2px 10px 2px 10px;
-
 }
 
 .footer {
@@ -284,14 +284,14 @@ hr {
   width: 100%;
 }
 
-.footer a:hover {
-  color: #3778c2;
-  font-weight: 700;
-}
-
 .footer a {
   text-decoration: none;
   color: #fff;
+}
+
+.footer a:hover {
+  color: #3778c2;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
